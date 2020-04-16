@@ -1,0 +1,15 @@
+[submodule "product-service"]
+	path = product-service
+	url = https://github.com/kshitijbahul/product-service.git
+[submodule "config-repo"]
+	path = config-repo
+	url = https://github.com/kshitijbahul/config-repo.git
+[submodule "springcloud-config-server"]
+	path = springcloud-config-server
+	url = https://github.com/kshitijbahul/springcloud-config-server.git
+[submodule "zuul-server"]
+	path = zuul-server
+	url = https://github.com/kshitijbahul/zuul-server.git
+[submodule "product-search-service"]
+	path = product-search-service
+	url = https://github.com/kshitijbahul/product-search-service.git
