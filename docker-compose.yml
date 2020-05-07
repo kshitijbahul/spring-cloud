@@ -1,0 +1,28 @@
+version: '3'
+services:
+  #create a docker compose file
+  eurker-server:
+    image: kshitijbahul/eureka-server
+    ports:
+      - "7050:7050"
+  config-server:
+    image: kshitijbahul/config-server
+    ports:
+      - "7060:7060"
+  elastic-search:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.8.6
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - discovery.type=single-node
+  mongo-db:
+    image: mongo
+    ports:
+      - "27017:27017"
+  rabbit-mq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
